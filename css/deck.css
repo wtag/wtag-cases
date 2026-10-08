@@ -1242,6 +1242,27 @@ a.reperc__it:hover .reperc__ph{border-color:var(--acento,var(--laranja-wt));
   flex-direction:row;gap:24px}
 .case--vert3 .case__stack > .case__img{flex:none;width:381.3px;height:678px;border-radius:28px}
 
+/* ── filme VERTICAL + três fotos horizontais ────────────────────────────────
+   Os dois filmes da Odontoprev são 9:16 e as fotos de apoio são 3:2: nem a
+   pilha padrão (herói 16:9 em cima) nem o .case--vert (grade de reels) servem.
+   Aqui o filme ocupa a altura inteira à esquerda — 870 × 9/16 = 489,4 de
+   largura — e as três fotos empilham na coluna que sobra da caixa de 980:
+   980 − 489,4 − 24 = 466,6 de largura, (870 − 44) / 3 = 275,3 de altura cada.
+   1,69:1 contra os 1,5 do original corta 11% da altura; o clique abre inteira.
+   Mesmo .case duplicado do .case--vert, pelo mesmo motivo de especificidade. */
+.case.case--vert1 .case__media{flex-direction:row;gap:24px;height:870px}
+.case.case--vert1 .case__video{width:489.4px;height:870px;flex:none}
+.case.case--vert1 .case__stack{flex:none;width:466.6px;height:870px;
+  flex-direction:column;gap:22px}
+.case.case--vert1 .case__stack > .case__img{flex:1 1 0;min-height:0;width:100%}
+/* entrada: as três abrem a partir de uma faixa vertical colada ao filme, o
+   espelho da faixa horizontal da pilha padrão */
+.case.case--vert1 .case__stack > [data-enter="expande"]:nth-child(1){clip-path:inset(6% 74% 62% 6% round 28px)}
+.case.case--vert1 .case__stack > [data-enter="expande"]:nth-child(2){clip-path:inset(34% 74% 34% 6% round 28px)}
+.case.case--vert1 .case__stack > [data-enter="expande"]:nth-child(3){clip-path:inset(62% 74% 6% 6% round 28px)}
+.case.case--vert1.is-played .case__stack > [data-enter="expande"]:nth-child(n){
+  clip-path:inset(0 0 0 0 round 28px)}
+
 .reperc--fitarodape{--logo-h:68px;flex:1 1 0;min-width:0;align-self:stretch;
   flex-direction:row;align-items:center;gap:22px;border-left:0;padding:0}
 .reperc--fitarodape .reperc__rot{flex:none;max-width:96px;line-height:1.25;

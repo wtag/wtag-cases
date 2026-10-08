@@ -13,15 +13,41 @@ python3 servidor.py 8768      # http://localhost:8768
 
 ## O que tem
 
-Capa → divisor CASES → por cliente, capa + cases → fecho.
+Capa → divisor CASES → cases → fecho.
+
+**No ar nesta versão (07.10.2026):**
 
 | Cliente | Cases |
 |---|---|
-| Sicredi Serrana | 40 Anos · Clubinho da Poupança · Private · Horóscopo do Golpe |
-| Magalu | Craques Gigantes · Lojinha do Fiuk |
-| Keeta | Central do Corre · Pulando o Bloco · Brasil Corre |
-| Bridgestone | Seu Pneu de Carro Novo |
-| Multiplan | BarraShoppingSul · Golden Lake |
+| Odontoprev | Dia dos Pais (Cuidar é Mágico) · 39 Anos |
+| Multiplan | BarraShoppingSul · Now New Barra! |
+| Keeta | Crias do Corre |
+
+**No arquivo, ocultos** (voltam trocando `false` por `true`): Sicredi Serrana
+(40 Anos, Clubinho da Poupança, Private, Horóscopo do Golpe), Magalu (Craques
+Gigantes, Lojinha do Fiuk), Keeta (Central do Corre, Pulando o Bloco, Brasil
+Corre), Bridgestone (Seu Pneu de Carro Novo), Multiplan (Golden Lake).
+
+A ordem na tela é a ordem das `<section>` no `index.html`.
+
+## Capas de cliente
+
+`window.CAPAS = false`, logo abaixo da lista de cases, tira todas as capas de
+cliente: os cases entram direto depois do divisor. Com `true`, cada capa volta
+a aparecer enquanto houver um case daquele cliente no ar. A Odontoprev não tem
+capa feita.
+
+## Arranjos de mídia
+
+Os módulos de números e de repercussão são opcionais, por classe na `<section>`:
+
+| Classe | Quando |
+|---|---|
+| `case--sem-reperc` | sem repercussão: mídia e números descem até onde estaria o rodapé |
+| `case--sem-kpis` | sem números: a mídia encosta na margem direita |
+| `case--vert` | campanha só em 9:16: um reel grande + quatro em grade |
+| `case--vert3` | três filmes 9:16 lado a lado |
+| `case--vert1` | um filme 9:16 na altura inteira + três fotos horizontais empilhadas |
 
 ## Ocultar e mostrar cases
 
@@ -35,13 +61,13 @@ todos os cases dele estão ocultos.
 
 | Endereço | Mostra |
 |---|---|
-| `…/?so=keeta,magalu` | só esses clientes |
-| `…/?so=sicredi&sem=private` | Sicredi, menos o Private |
-| `…/?sem=bridgestone,horoscopo` | tudo, menos esses |
+| `…/?so=odontoprev` | só os dois da Odontoprev |
+| `…/?so=odontoprev&sem=odontoprev-pais` | Odontoprev, menos o Dia dos Pais |
+| `…/?sem=keeta` | tudo, menos a Keeta |
 
-Vale o nome do cliente (`sicredi`, `magalu`, `keeta`, `bridgestone`,
-`multiplan`) ou o id do case sem o `s-` (`private`, `horoscopo`,
-`lojinha-fiuk`…). O endereço **só estreita**: um case marcado `false` no arquivo
+Vale o nome do cliente (`odontoprev`, `multiplan`, `keeta`, `sicredi`,
+`magalu`, `bridgestone`) ou o id do case sem o `s-` (`odontoprev-pais`,
+`odontoprev-aniversario`, `keeta-crias-do-corre`…). O endereço **só estreita**: um case marcado `false` no arquivo
 não volta por link.
 
 ## Cache
@@ -50,7 +76,7 @@ não volta por link.
 suba o número em todas as linhas:
 
 ```bash
-sed -i '' 's/?v=1"/?v=2"/g' index.html
+sed -i '' 's/?v=4"/?v=5"/g' index.html
 ```
 
 A lista de cases fica **dentro** do `index.html` justamente para não precisar
@@ -78,3 +104,12 @@ Copie a `<section>` do case (e a capa do cliente, se for cliente novo) para o
 pílula `Clientes` (aqui não há tela de marcas parceiras), copie os arquivos de
 `assets/` que ela usa e acrescente o id na lista `window.CASES`. Se esquecer a
 lista, o case aparece mesmo assim e o console do navegador avisa.
+
+## Material bruto dos cases
+
+A pasta `cases/` guarda o material como chegou (PNGs de 30 MB, .mov, .psb de
+300 MB) e fica **fora do repositório** pelo `.gitignore`: o GitHub recusa
+arquivos acima de 100 MB. O que vai para o ar são as versões tratadas em
+`assets/` — vídeos em H.264 1500k (horizontais, lado maior 1920) ou 1200k
+(verticais, 720×1280), fotos recortadas no aspecto de cada cartão e uma versão
+inteira `-full` para o clique em "Ampliar".

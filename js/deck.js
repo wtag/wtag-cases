@@ -28,6 +28,7 @@
      aos cases. Nome de marca não passa pelo dicionário, então fica igual em EN. */
   var ATOS = {
     abertura:    'Abertura',
+    odontoprev:  'Odontoprev',
     sicredi:     'Sicredi Serrana',
     magalu:      'Magalu',
     keeta:       'Keeta',

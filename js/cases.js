@@ -18,14 +18,15 @@
    por link. Assim dá para mandar um recorte por prospect sem republicar, e sem
    o risco de um link expor um case que foi tirado de propósito.
 
-   Nos parâmetros vale o nome do cliente (sicredi, magalu, keeta, bridgestone,
-   multiplan) ou o id do case, com ou sem o "s-" na frente:
+   Nos parâmetros vale o nome do cliente (odontoprev, multiplan, keeta, sicredi,
+   magalu, bridgestone) ou o id do case, com ou sem o "s-" na frente:
      ?so=keeta,magalu
      ?so=sicredi&sem=private,horoscopo
      ?sem=bridgestone
 
-   A capa de cada cliente não tem chave: aparece enquanto houver ao menos um
-   case dele visível e some sozinha quando todos saem.
+   A capa de cada cliente não tem chave própria: aparece enquanto houver ao
+   menos um case dele visível e some sozinha quando todos saem. A chave geral
+   window.CAPAS = false (index.html) tira todas de uma vez.
    ========================================================================= */
 (function () {
   'use strict';
@@ -66,7 +67,7 @@
   });
 
   [].forEach.call(document.querySelectorAll('.slide[data-capa]'), function (capa) {
-    if (visiveisPorCliente[capa.dataset.ato]) capa.removeAttribute('data-oculto');
+    if (window.CAPAS !== false && visiveisPorCliente[capa.dataset.ato]) capa.removeAttribute('data-oculto');
     else capa.setAttribute('data-oculto', '');
   });
 

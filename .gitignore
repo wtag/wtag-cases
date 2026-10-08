@@ -8,3 +8,10 @@ Claude outputs/
 # Exportações e auxiliares de conferência
 WT.AG_*.pdf
 _teste-*.html
+
+# Material bruto dos cases (psb/mov/png de dezenas a centenas de MB).
+# O que vai ao ar está tratado em assets/.
+/cases/
+
+# Configuração local do preview
+/.claude/

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>WT.AG — Cases 2026</title>
 <meta name="description" content="Cases WT.AG 2026 — Social First Agency. Apresentação de slides.">
-<link rel="stylesheet" href="css/deck.css?v=1">
+<link rel="stylesheet" href="css/deck.css?v=4">
 
 <!-- ══════════════════════════════════════════════════════════════════════════
      QUAIS CASES ENTRAM NESTE LINK
@@ -20,28 +20,44 @@
      ══════════════════════════════════════════════════════════════════════ -->
 <script>
 window.CASES = {
-  /* Sicredi Serrana */
-  's-sicredi':            true,   // 40 Anos
-  's-bichinhos':          true,   // Clubinho da Poupança
-  's-private':            true,   // Private
-  's-horoscopo':          true,   // Horóscopo do Golpe
-
-  /* Magalu */
-  's-magalu':             true,   // Craques Gigantes
-  's-lojinha-fiuk':       true,   // Lojinha do Fiuk
-
-  /* Keeta */
-  's-central-corre':      true,   // Central do Corre
-  's-pulando-bloco':      true,   // Pulando o Bloco
-  's-keeta-brasil-corre': true,   // Brasil Corre
-
-  /* Bridgestone */
-  's-bridgestone':        true,   // Seu Pneu de Carro Novo
+  /* ── NESTA VERSÃO (07.10.2026): só estes quatro ── */
+  /* Odontoprev */
+  's-odontoprev-pais':        true,   // Dia dos Pais · Cuidar é Mágico
+  's-odontoprev-aniversario': true,   // 39 Anos
 
   /* Multiplan */
-  's-barrashoppingsul':   true,   // BarraShoppingSul · Now New Barra!
-  's-golden-lake':        true    // Golden Lake · Lake Baikal
+  's-barrashoppingsul':       true,   // BarraShoppingSul · Now New Barra!
+
+  /* Keeta */
+  's-keeta-crias-do-corre':   true,   // Crias do Corre
+
+  /* ── fora desta versão (continuam no arquivo) ── */
+  /* Sicredi Serrana */
+  's-sicredi':                false,  // 40 Anos
+  's-bichinhos':              false,  // Clubinho da Poupança
+  's-private':                false,  // Private
+  's-horoscopo':              false,  // Horóscopo do Golpe
+
+  /* Magalu */
+  's-magalu':                 false,  // Craques Gigantes
+  's-lojinha-fiuk':           false,  // Lojinha do Fiuk
+
+  /* Keeta */
+  's-central-corre':          false,  // Central do Corre
+  's-pulando-bloco':          false,  // Pulando o Bloco
+  's-keeta-brasil-corre':     false,  // Brasil Corre
+
+  /* Bridgestone */
+  's-bridgestone':            false,  // Seu Pneu de Carro Novo
+
+  /* Multiplan */
+  's-golden-lake':            false   // Golden Lake · Lake Baikal
 };
+
+/* Capas de cliente (foto + logo + números antes dos cases de cada marca).
+   false = nenhuma capa aparece; os cases entram direto depois do divisor.
+   true  = cada capa aparece enquanto houver um case daquele cliente no ar. */
+window.CAPAS = false;
 </script>
 </head>
 <body>
@@ -60,7 +76,7 @@ window.CASES = {
      sozinha quando todos os cases dele estão ocultos.
      ══════════════════════════════════════════════════════════════════════ -->
 
-
+<!-- Capa · WT.AG
      A caixa de instruções vive AQUI, e não num arquivo à parte, porque é a
      mesma marcação que o botão "?" do rodapé clona para o painel de consulta:
      duas cópias do mesmo texto divergiriam na primeira alteração. -->
@@ -111,6 +127,132 @@ window.CASES = {
        text-transform:uppercase;font-size:869px;line-height:1;color:var(--creme-wt);white-space:nowrap"
        data-delay="300" data-rl-dur="700" data-rl-stagger="54" data-rl-voltas="2">CASES</div>
   <div class="marca-logo l-marcas" data-enter="fade" data-delay="630"><img src="assets/logo/wtag-branco.svg" alt="WT.AG"></div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     ODONTOPREV
+     Sem capa de cliente (ver window.CAPAS). Os dois filmes principais são
+     VERTICAIS (1080×1920) e as fotos são 3:2, então nenhum arranjo pronto
+     servia: o .case--vert1 põe o filme em 9:16 à esquerda, na altura inteira, e
+     empilha as três fotos ao lado. Sem repercussão, com três números.
+     ══════════════════════════════════════════════════════════════════════ -->
+
+<!-- ODONTOPREV ─ Dia dos Pais · Cuidar é Mágico
+     Acento #6AE8FF: o ciano do "mágico" no selo da campanha. -->
+<section id="s-odontoprev-pais" class="slide case case--sem-reperc case--vert1" style="--acento:#6AE8FF" data-ato="odontoprev" data-tom="escuro" data-titulo="Odontoprev · Dia dos Pais">
+  <div class="case__fundo"><img data-lazy="assets/img/cases/odontoprev-pais-fundo.jpg" data-lazy-m="assets/img/cases/odontoprev-pais-fundo-m.jpg" alt=""></div>
+  <div class="case__scrim"></div>
+  <div class="marca marca--tl l-marcas sobre-escuro" data-enter="fade" data-delay="0"><span>Credenciais</span></div>
+  <div class="marca marca--tr l-marcas sobre-escuro" data-enter="fade" data-delay="0">2026</div>
+
+  <div class="case__marca case__marca--credito" style="left:72px;top:148px;width:528px;height:34px" data-delay="67">
+    <img data-lazy="assets/img/logos-cases/odontoprev.png" alt="Odontoprev">
+    <em>apresenta</em>
+  </div>
+  <div class="abs l-chamada case__selo" style="left:72px;top:210px" data-enter="up" data-delay="153">
+    <img data-lazy="assets/img/logos-cases/selo-odontoprev-pais.png" data-lazy-m="assets/img/logos-cases/selo-odontoprev-pais-m.png" alt="Cuidar é mágico">
+    <span class="selo__nota">Cuidar é mágico</span>
+  </div>
+
+  <div class="case__col" data-stagger="110" data-delay="260">
+    <div class="case__blk" data-enter="up"><h3>Contexto</h3>
+      <p data-texto="Criação de uma campanha focada na data comemorativa do Dia dos Pais, que fosse emotiva e valorizasse a figura paterna nas primeiras descobertas e momentos da vida.">Uma campanha de Dia dos Pais emotiva, que valorizasse a figura paterna nas primeiras descobertas e momentos da vida.</p></div>
+    <div class="case__blk" data-enter="up"><h3>Insight</h3>
+      <p data-texto="A verdadeira magia de um pai não está em salvar o mundo com atos extraordinários, mas na presença constante do dia a dia: “Nem todo pai salva o mundo, mas todo pai transforma a vida de alguém.”">A magia de um pai não está em salvar o mundo, mas na presença do dia a dia: “Nem todo pai salva o mundo, mas todo pai transforma a vida de alguém.”</p></div>
+    <div class="case__blk" data-enter="up"><h3>Ideia</h3>
+      <p data-texto="Romper com o clichê do “pai super-herói” para posicionar o pai como o verdadeiro protagonista do cuidado no dia a dia, fortalecendo a conexão emocional da Odontoprev com o público através do conceito “Cuidar é Mágico” e transformando a figura do pai em o Fado do Dente.">Romper com o clichê do pai super-herói: no conceito “Cuidar é Mágico”, o pai vira o protagonista do cuidado no dia a dia — e o Fado do Dente.</p></div>
+  </div>
+  <button class="case__mais" type="button">＋ Texto completo</button>
+
+  <div class="case__media" data-stagger="180" data-delay="378" data-foco style="--realce:1.035;--recuo:.968">
+    <div class="case__video" data-enter="expande" data-foco-item data-paralaxe="22" data-video="assets/video/case-odontoprev-pais.mp4" data-poster="assets/img/cases/odontoprev-pais-hero.jpg" data-legenda="Odontoprev · Dia dos Pais — filme">
+      <div class="px"><img data-lazy="assets/img/cases/odontoprev-pais-hero.jpg" data-lazy-m="assets/img/cases/odontoprev-pais-hero-m.jpg" alt="Cena do filme Cuidar é Mágico"></div>
+      <button class="play-btn" type="button" aria-label="Assistir ao filme"></button>
+      <span class="case__tag">Assistir ao filme</span>
+    </div>
+    <div class="case__stack">
+    <div class="case__img" data-enter="expande" data-foco-item data-paralaxe="16"
+         data-full="assets/img/cases/odontoprev-pais-full1.jpg" data-legenda="Odontoprev · Dia dos Pais · imagem 1">
+      <div class="px"><img data-lazy="assets/img/cases/odontoprev-pais-img1.jpg" data-lazy-m="assets/img/cases/odontoprev-pais-img1-m.jpg" alt="Estudo da personagem da campanha"></div><span class="case__tag">Ampliar</span></div>
+    <div class="case__img" data-enter="expande" data-foco-item data-paralaxe="16"
+         data-full="assets/img/cases/odontoprev-pais-full2.jpg" data-legenda="Odontoprev · Dia dos Pais · imagem 2">
+      <div class="px"><img data-lazy="assets/img/cases/odontoprev-pais-img2.jpg" data-lazy-m="assets/img/cases/odontoprev-pais-img2-m.jpg" alt="O pai troca o dente pela surpresa"></div><span class="case__tag">Ampliar</span></div>
+    <div class="case__img" data-enter="expande" data-foco-item data-paralaxe="16"
+         data-full="assets/img/cases/odontoprev-pais-full3.jpg" data-legenda="Odontoprev · Dia dos Pais · imagem 3">
+      <div class="px"><img data-lazy="assets/img/cases/odontoprev-pais-img3.jpg" data-lazy-m="assets/img/cases/odontoprev-pais-img3-m.jpg" alt="O pai como Fado do Dente"></div><span class="case__tag">Ampliar</span></div>
+    </div>
+  </div>
+
+  <div class="case__kpis case__kpis--vert" data-enter="up" data-delay="560"
+       data-foco style="--realce:1.1;--recuo:.94">
+    <div class="kpi-cx">
+      <div class="case__kpi" data-foco-item data-enter="up"><b data-count-to="5271" data-count-sep="1" data-delay="655">0</b><span>Interações</span></div>
+      <div class="case__kpi" data-foco-item data-enter="up"><b data-count-to="58110" data-count-sep="1" data-delay="689">0</b><span>Visualizações</span></div>
+      <div class="case__kpi" data-foco-item data-enter="up"><b data-count-to="5482" data-count-sep="1" data-delay="722">0</b><span>Alcance</span></div>
+    </div>
+  </div>
+  <div class="marca marca--bl marca--sm l-marcas sobre-escuro" data-enter="fade" data-delay="700">Case</div>
+  <div class="marca-logo l-marcas" data-enter="fade" data-delay="700"><img src="assets/logo/wtag-branco.svg" alt="WT.AG"></div>
+</section>
+
+<!-- ODONTOPREV ─ 39 Anos · O melhor da nossa história sempre foi a sua
+     Acento #4F8BFF: o azul Odontoprev do filme (#0A5CFF) clareado até passar
+     do piso de contraste dos acentos do deck sobre o fundo escuro. O selo é
+     todo branco, então não dava para amostrar dele. -->
+<section id="s-odontoprev-aniversario" class="slide case case--sem-reperc case--vert1" style="--acento:#4F8BFF" data-ato="odontoprev" data-tom="escuro" data-titulo="Odontoprev · 39 Anos">
+  <div class="case__fundo"><img data-lazy="assets/img/cases/odontoprev-aniversario-fundo.jpg" data-lazy-m="assets/img/cases/odontoprev-aniversario-fundo-m.jpg" alt=""></div>
+  <div class="case__scrim"></div>
+  <div class="marca marca--tl l-marcas sobre-escuro" data-enter="fade" data-delay="0"><span>Credenciais</span></div>
+  <div class="marca marca--tr l-marcas sobre-escuro" data-enter="fade" data-delay="0">2026</div>
+
+  <div class="case__marca case__marca--credito" style="left:72px;top:148px;width:528px;height:34px" data-delay="67">
+    <img data-lazy="assets/img/logos-cases/odontoprev.png" alt="Odontoprev">
+    <em>apresenta</em>
+  </div>
+  <div class="abs l-chamada case__selo" style="left:72px;top:210px" data-enter="up" data-delay="153">
+    <img data-lazy="assets/img/logos-cases/selo-odontoprev-aniversario.png" data-lazy-m="assets/img/logos-cases/selo-odontoprev-aniversario-m.png" alt="39 anos · O melhor da nossa história sempre foi a sua">
+    <span class="selo__nota">O melhor da nossa história sempre foi a sua</span>
+  </div>
+
+  <div class="case__col" data-stagger="110" data-delay="260">
+    <div class="case__blk" data-enter="up"><h3>Contexto</h3>
+      <p data-texto="Uma campanha que celebra os 39 anos da Odontoprev através das histórias reais de transformação, autoestima e confiança vivenciadas por seus beneficiários, colaboradores, dentistas e corretores.">Os 39 anos da Odontoprev contados pelas histórias reais de transformação, autoestima e confiança de beneficiários, colaboradores, dentistas e corretores.</p></div>
+    <div class="case__blk" data-enter="up"><h3>Insight</h3>
+      <p data-texto="A marca e a vida são medidas por momentos transformados: os 39 anos da Odontoprev pertencem às histórias reais de quem faz parte dessa trajetória, sob o mote “O melhor da nossa história sempre foi a sua”.">A marca se mede pelos momentos que transformou: os 39 anos pertencem a quem faz parte da trajetória — “O melhor da nossa história sempre foi a sua”.</p></div>
+    <div class="case__blk" data-enter="up"><h3>Ideia</h3>
+      <p data-texto="A entrega consistiu em 4 filmes de depoimentos com a história de cada personagem junto com retratos em traço contínuo para cada público, alinhados ao mote da campanha, além de um vídeo manifesto que resume a importância da marca para cada um.">Quatro filmes de depoimentos, um por público, com retratos em traço contínuo de cada personagem, e um manifesto sobre a importância da marca para cada um.</p></div>
+  </div>
+  <button class="case__mais" type="button">＋ Texto completo</button>
+
+  <div class="case__media" data-stagger="180" data-delay="378" data-foco style="--realce:1.035;--recuo:.968">
+    <div class="case__video" data-enter="expande" data-foco-item data-paralaxe="22" data-video="assets/video/case-odontoprev-aniversario.mp4" data-poster="assets/img/cases/odontoprev-aniversario-hero.jpg" data-legenda="Odontoprev · 39 Anos — manifesto">
+      <div class="px"><img data-lazy="assets/img/cases/odontoprev-aniversario-hero.jpg" data-lazy-m="assets/img/cases/odontoprev-aniversario-hero-m.jpg" alt="Depoimento do manifesto 39 Anos"></div>
+      <button class="play-btn" type="button" aria-label="Assistir ao manifesto"></button>
+      <span class="case__tag">Assistir ao manifesto</span>
+    </div>
+    <div class="case__stack">
+    <div class="case__img" data-enter="expande" data-foco-item data-paralaxe="16"
+         data-full="assets/img/cases/odontoprev-aniversario-full1.jpg" data-legenda="Odontoprev · 39 Anos · imagem 1">
+      <div class="px"><img data-lazy="assets/img/cases/odontoprev-aniversario-img1.jpg" data-lazy-m="assets/img/cases/odontoprev-aniversario-img1-m.jpg" alt="Personagens dos depoimentos"></div><span class="case__tag">Ampliar</span></div>
+    <div class="case__img" data-enter="expande" data-foco-item data-paralaxe="16"
+         data-full="assets/img/cases/odontoprev-aniversario-full2.jpg" data-legenda="Odontoprev · 39 Anos · imagem 2">
+      <div class="px"><img data-lazy="assets/img/cases/odontoprev-aniversario-img2.jpg" data-lazy-m="assets/img/cases/odontoprev-aniversario-img2-m.jpg" alt="Personagens dos depoimentos"></div><span class="case__tag">Ampliar</span></div>
+    <div class="case__img" data-enter="expande" data-foco-item data-paralaxe="16"
+         data-full="assets/img/cases/odontoprev-aniversario-full3.jpg" data-legenda="Odontoprev · 39 Anos · imagem 3">
+      <div class="px"><img data-lazy="assets/img/cases/odontoprev-aniversario-img3.jpg" data-lazy-m="assets/img/cases/odontoprev-aniversario-img3-m.jpg" alt="Retratos em traço contínuo"></div><span class="case__tag">Ampliar</span></div>
+    </div>
+  </div>
+
+  <div class="case__kpis case__kpis--vert" data-enter="up" data-delay="560"
+       data-foco style="--realce:1.1;--recuo:.94">
+    <div class="kpi-cx">
+      <div class="case__kpi" data-foco-item data-enter="up"><b data-count-to="33480" data-count-sep="1" data-delay="655">0</b><span>Interações</span></div>
+      <div class="case__kpi" data-foco-item data-enter="up"><b data-count-to="877818" data-count-sep="1" data-delay="689">0</b><span>Visualizações</span></div>
+      <div class="case__kpi" data-foco-item data-enter="up"><b data-count-to="471382" data-count-sep="1" data-delay="722">0</b><span>Alcance</span></div>
+    </div>
+  </div>
+  <div class="marca marca--bl marca--sm l-marcas sobre-escuro" data-enter="fade" data-delay="700">Case</div>
+  <div class="marca-logo l-marcas" data-enter="fade" data-delay="700"><img src="assets/logo/wtag-branco.svg" alt="WT.AG"></div>
 </section>
 
 <!-- ══════════════════════════════════════════════════════════════════════════
@@ -820,6 +962,7 @@ window.CASES = {
   </div>
 </section>
 
+<!-- Keeta · Brasil Corre
      Acento #11CC9A: o verde do SELO da campanha, medido nos 164 mil pixels
      opacos dele — contraste 8,9:1. Antes de o selo chegar eu tinha posto o
      #35D07E de marca da Keeta como provisório, e ele tinha o defeito de repetir
@@ -1147,6 +1290,71 @@ window.CASES = {
   <div class="marca-logo l-marcas" data-enter="fade" data-delay="700"><img src="assets/logo/wtag-branco.svg" alt="WT.AG"></div>
 </section>
 
+<!-- KEETA ─ Crias do Corre ─────────────────────────────────────────────────────
+     Fica DEPOIS do Barra de propósito, fora do bloco da Keeta lá em cima: a
+     ordem deste recorte é Odontoprev → Barra → Keeta, e a ordem da tela é a
+     ordem do arquivo. Os outros cases da Keeta estão ocultos.
+     Acento #00F9C6: o verde-menta do lettering, amostrado do .psb da campanha. -->
+<section id="s-keeta-crias-do-corre" class="slide case case--sem-reperc" style="--acento:#00F9C6" data-ato="keeta" data-tom="escuro" data-titulo="Keeta · Crias do Corre">
+  <div class="case__fundo"><img data-lazy="assets/img/cases/keeta-crias-fundo.jpg" data-lazy-m="assets/img/cases/keeta-crias-fundo-m.jpg" alt=""></div>
+  <div class="case__scrim"></div>
+  <div class="marca marca--tl l-marcas sobre-escuro" data-enter="fade" data-delay="0"><span>Credenciais</span></div>
+  <div class="marca marca--tr l-marcas sobre-escuro" data-enter="fade" data-delay="0">2026</div>
+
+  <div class="case__marca case__marca--credito" style="left:72px;top:148px;width:528px;height:34px" data-delay="67">
+    <img data-lazy="assets/img/logos-cases/keeta.png" alt="Keeta">
+    <em>apresenta</em>
+  </div>
+  <div class="abs l-chamada case__selo" style="left:72px;top:210px" data-enter="up" data-delay="153">
+    <img data-lazy="assets/img/logos-cases/selo-crias-do-corre.png" data-lazy-m="assets/img/logos-cases/selo-crias-do-corre-m.png" alt="Crias do Corre · Escola de criação de conteúdo dos entregadores parceiros Keeta">
+    <span class="selo__nota">Crias do Corre</span>
+  </div>
+
+  <div class="case__col" data-stagger="110" data-delay="260">
+    <div class="case__blk" data-enter="up"><h3>Contexto</h3>
+      <p data-texto="A Keeta precisava criar uma conexão real e gerar impacto positivo na rotina dos seus entregadores parceiros, fortalecendo o cuidado e abrindo novas oportunidades para quem está diariamente nas ruas.">A Keeta precisava criar uma conexão real com seus entregadores parceiros, fortalecendo o cuidado e abrindo oportunidades para quem está todo dia nas ruas.</p></div>
+    <div class="case__blk" data-enter="up"><h3>Insight</h3>
+      <p data-texto="O corre diário do entregador parceiro já é repleto de histórias e narrativas reais. Faltavam apenas o conhecimento técnico e as ferramentas certas para transformar a rotina de entregas em conteúdo de valor e em uma nova fonte de renda/oportunidade nas redes.">O corre diário já é cheio de histórias reais. Faltavam técnica e ferramentas para transformar a rotina em conteúdo de valor e em nova fonte de renda nas redes.</p></div>
+    <div class="case__blk" data-enter="up"><h3>Ideia</h3>
+      <p data-texto="Idealizado e executado pela WT.AG (em parceria com a Digital Favela), lançamos o “Crias do Corre”: um curso gratuito de criação de conteúdo em 4 módulos voltado aos entregadores parceiros. A iniciativa ensina na prática a transformar vivências de rua em conteúdo digital, impulsionada por um filme manifesto e estratégia de amplificação em redes.">Com a Digital Favela, lançamos o “Crias do Corre”: curso gratuito de criação de conteúdo em 4 módulos para entregadores, impulsionado por um filme manifesto.</p></div>
+  </div>
+  <button class="case__mais" type="button">＋ Texto completo</button>
+
+  <div class="case__media" data-stagger="180" data-delay="378" data-foco style="--realce:1.035;--recuo:.968">
+    <div class="case__video" data-enter="expande" data-foco-item data-paralaxe="22" data-video="assets/video/case-keeta-crias-do-corre.mp4" data-poster="assets/img/cases/keeta-crias-hero.jpg" data-legenda="Keeta · Crias do Corre — manifesto">
+      <div class="px"><img data-lazy="assets/img/cases/keeta-crias-hero.jpg" data-lazy-m="assets/img/cases/keeta-crias-hero-m.jpg" alt="Cena do filme manifesto Crias do Corre"></div>
+      <button class="play-btn" type="button" aria-label="Assistir ao manifesto"></button>
+      <span class="case__tag">Assistir ao manifesto</span>
+    </div>
+    <div class="case__stack">
+    <div class="case__img" data-enter="expande" data-foco-item data-paralaxe="16"
+         data-full="assets/img/cases/keeta-crias-full1.jpg" data-legenda="Keeta · Crias do Corre · imagem 1">
+      <div class="px"><img data-lazy="assets/img/cases/keeta-crias-img1.jpg" data-lazy-m="assets/img/cases/keeta-crias-img1-m.jpg" alt="Entregador parceiro gravando conteúdo"></div><span class="case__tag">Ampliar</span></div>
+    <div class="case__img" data-enter="expande" data-foco-item data-paralaxe="16"
+         data-full="assets/img/cases/keeta-crias-full2.jpg" data-legenda="Keeta · Crias do Corre · imagem 2">
+      <div class="px"><img data-lazy="assets/img/cases/keeta-crias-img2.jpg" data-lazy-m="assets/img/cases/keeta-crias-img2-m.jpg" alt="Entregador parceiro gravando conteúdo"></div><span class="case__tag">Ampliar</span></div>
+    <div class="case__img" data-enter="expande" data-foco-item data-paralaxe="16"
+         data-full="assets/img/cases/keeta-crias-full3.jpg" data-legenda="Keeta · Crias do Corre · imagem 3">
+      <div class="px"><img data-lazy="assets/img/cases/keeta-crias-img3.jpg" data-lazy-m="assets/img/cases/keeta-crias-img3-m.jpg" alt="Entregador parceiro gravando conteúdo"></div><span class="case__tag">Ampliar</span></div>
+    </div>
+  </div>
+
+  <!-- Consolidado dos 4 posts de lançamento -->
+  <div class="case__kpis case__kpis--vert" data-enter="up" data-delay="560"
+       data-foco style="--realce:1.1;--recuo:.94">
+    <div class="kpi-cx">
+      <div class="case__kpi" data-foco-item data-enter="up"><b data-count-to="890" data-count-pre="+" data-count-pos="K" data-delay="655">+0K</b><span>Visualizações</span></div>
+      <div class="case__kpi" data-foco-item data-enter="up"><b data-count-to="670" data-count-pre="+" data-count-pos="K" data-delay="689">+0K</b><span>Pessoas alcançadas</span></div>
+      <div class="case__kpi" data-foco-item data-enter="up"><b data-count-to="22" data-count-pre="+" data-count-pos="K" data-delay="722">+0K</b><span>Engajamentos</span></div>
+      <div class="case__kpi" data-foco-item data-enter="up"><b data-count-to="148" data-count-pre="+" data-count-pos="K" data-delay="756">+0K</b><span>Views orgânicas</span></div>
+      <div class="case__kpi" data-foco-item data-enter="up"><b data-count-to="180" data-count-pre="+" data-delay="790">+0</b><span>Novos seguidores</span></div>
+      <div class="case__kpi" data-foco-item data-enter="up"><b data-count-to="4" data-delay="823">0</b><span>Posts de lançamento</span></div>
+    </div>
+  </div>
+  <div class="marca marca--bl marca--sm l-marcas sobre-escuro" data-enter="fade" data-delay="700">Case</div>
+  <div class="marca-logo l-marcas" data-enter="fade" data-delay="700"><img src="assets/logo/wtag-branco.svg" alt="WT.AG"></div>
+</section>
+
 <!-- GOLDEN-LAKE ─ Golden Lake · Lake Baikal ─────────────────────────────────────────
      Case novo. O que já é definitivo: o logo do cliente, o videocase e todas as
      imagens, que são QUADROS DO PRÓPRIO FILME — não há banco de imagem aqui, e
@@ -1353,9 +1561,9 @@ window.CASES = {
 
 </div><!-- /#viewport -->
 
-<script src="js/cases.js?v=1"></script>
-<script src="js/deck.js?v=1"></script>
-<script src="js/i18n-dic.js?v=1"></script>
-<script src="js/i18n.js?v=1"></script>
+<script src="js/cases.js?v=4"></script>
+<script src="js/deck.js?v=4"></script>
+<script src="js/i18n-dic.js?v=4"></script>
+<script src="js/i18n.js?v=4"></script>
 </body>
 </html>
