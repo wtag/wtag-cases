@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+._*
+
+# Pasta que o app cria para os arquivos anexados. Não vai para o repositório.
+Claude outputs/
+
+# Exportações e auxiliares de conferência
+WT.AG_*.pdf
+_teste-*.html
