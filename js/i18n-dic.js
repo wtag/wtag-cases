@@ -579,6 +579,8 @@ window.DIC_EN = {
 'JUNTOS': 'TOGETHER',
 'UMA MARCA': 'A BRAND',
 'PROTAGONISTA': 'THAT LEADS',
+'MARCAS': 'BRANDS',
+'PROTAGONISTAS': 'THAT LEAD',
 'DA CULTURA?': 'CULTURE?',
 
 /* ── texto com marcação por dentro ────────────────────────────────────────
