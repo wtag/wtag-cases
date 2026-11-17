@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>WT.AG — Cases 2026</title>
 <meta name="description" content="Cases WT.AG 2026 — Social First Agency. Apresentação de slides.">
-<link rel="stylesheet" href="css/deck.css?v=8">
+<link rel="stylesheet" href="css/deck.css?v=9">
 
 <!-- ══════════════════════════════════════════════════════════════════════════
      QUAIS CASES ENTRAM NESTE LINK
@@ -68,9 +68,13 @@ window.CAPAS = false;
      …/wtag-cases/?opcao=01
    Ela define QUAIS cases entram e EM QUE ORDEM (a ordem da lista manda), e
    pode reabrir um case que está false em window.CASES: a opção é decidida
-   aqui no arquivo, não no endereço. Sem ?opcao= vale window.CASES.
+   aqui no arquivo, não no endereço. Sem ?opcao= vale window.OPCAO_PADRAO
+   (ou window.CASES, se ela estiver vazia).
    Para criar uma nova, copie um bloco, troque o número e a lista.
    Ids disponíveis: veja window.CASES acima. */
+/* Opção que o link SEM ?opcao= mostra. Vazio ('') = vale window.CASES. */
+window.OPCAO_PADRAO = '02';
+
 window.OPCOES = {
   '01': {
     nome:  'Odontoprev, Barra e Keeta',
@@ -1711,9 +1715,9 @@ window.OPCOES = {
 
 </div><!-- /#viewport -->
 
-<script src="js/cases.js?v=8"></script>
-<script src="js/deck.js?v=8"></script>
-<script src="js/i18n-dic.js?v=8"></script>
-<script src="js/i18n.js?v=8"></script>
+<script src="js/cases.js?v=9"></script>
+<script src="js/deck.js?v=9"></script>
+<script src="js/i18n-dic.js?v=9"></script>
+<script src="js/i18n.js?v=9"></script>
 </body>
 </html>

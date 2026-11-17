@@ -33,11 +33,12 @@
 
   var CASES = window.CASES || {};
 
-  /* ?opcao=NN: a opção do arquivo manda em tudo — quais cases e em que ordem.
+  /* ?opcao=NN (ou, sem ela, window.OPCAO_PADRAO): a opção do arquivo manda em tudo — quais cases e em que ordem.
      As seções são reordenadas ANTES do deck.js ler os slides, então sumário,
      rodapé e numeração já nascem na ordem da opção. */
   var mo = /[?&]opcao=([^&#]*)/.exec(location.search);
-  var opcao = mo && (window.OPCOES || {})[decodeURIComponent(mo[1])];
+  var chave = mo ? decodeURIComponent(mo[1]) : (window.OPCAO_PADRAO || '');
+  var opcao = chave && (window.OPCOES || {})[chave];
   if (mo && !opcao) console.warn('[cases] opção "' + mo[1] + '" não existe em window.OPCOES; vale window.CASES.');
   if (opcao) {
     CASES = {};

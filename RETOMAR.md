@@ -47,12 +47,14 @@ assets/img/logos-cases/  logo do cliente (negativo) e selos da campanha (PNG rec
 assets/video/            vídeos comprimidos (H.264, faststart)
 ```
 
-## As três listas no topo do index.html
+## As listas no topo do index.html
 
-1. **`window.CASES`**: `true`/`false` por case. É o que o link **sem** `?opcao=`
-   mostra. Hoje: os 4 da opção 01.
+1. **`window.CASES`**: `true`/`false` por case. Só vale se `OPCAO_PADRAO` estiver vazia.
 2. **`window.CAPAS`**: `false` = nenhuma capa de cliente aparece (decisão atual).
-3. **`window.OPCOES`**: cada opção tem `nome`, `capas` e `casos` (lista de ids na
+3. **`window.OPCAO_PADRAO`**: a opção que o link **sem** `?opcao=` mostra.
+   **Hoje: `'02'` (novembro).** Para pôr outra versão no ar no link principal,
+   é só trocar este número.
+4. **`window.OPCOES`**: cada opção tem `nome`, `capas` e `casos` (lista de ids na
    ORDEM em que entram). A opção pode trazer case que está `false` em CASES.
 
 Opções atuais:
@@ -60,7 +62,7 @@ Opções atuais:
 | Opção | Cases (nesta ordem) | Pasta no Drive |
 |---|---|---|
 | 01 | Odontoprev Dia dos Pais · Odontoprev 39 Anos · BarraShoppingSul Now New Barra! · Keeta Crias do Corre | `Opcao-01_Odontoprev-Barra-Keeta` |
-| 02 (novembro) | ParkShopping Canoas Natal não dá pra adiar · Calvin Klein Cinemas BTS · Sicredi Clubinho da Poupança | `Opcao-02_Novembro_ParkShopping-CalvinKlein-Clubinho` |
+| 02 (novembro) · **no link principal** | ParkShopping Canoas Natal não dá pra adiar · Calvin Klein Cinemas BTS · Sicredi Clubinho da Poupança | `Opcao-02_Novembro_ParkShopping-CalvinKlein-Clubinho` |
 
 Ids de todos os cases que existem no arquivo: `s-odontoprev-pais`,
 `s-odontoprev-aniversario`, `s-barrashoppingsul`, `s-keeta-crias-do-corre`,
@@ -109,7 +111,7 @@ Google Doc), `Logo` (versão branca), `Selo`/Lettering, `Foto_fundo`/`Fundo`,
    acrescentar o id em `window.CASES` (e na opção); se cliente novo, nome em
    `ATOS` no `js/deck.js`; traduções no `js/i18n-dic.js`.
 6. Subir `?v=N` de css/js no `index.html` (cache):
-   `sed -i '' 's/?v=8"/?v=9"/g' index.html` (ver o número atual antes).
+   `sed -i '' 's/?v=9"/?v=10"/g' index.html` (ver o número atual antes).
 
 ### Arranjos de mídia (classes na `<section>`)
 | Classe | Uso |

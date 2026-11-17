@@ -42,7 +42,8 @@ Ficam em `window.OPCOES`, logo abaixo de `window.CAPAS` no `index.html`:
 
 O link é `…/wtag-cases/?opcao=02`. A opção manda em tudo: escolhe e ORDENA os
 cases (a capa de cada cliente vai junto, se `capas: true`) e pode trazer um
-case que está `false` em `window.CASES`. Sem `?opcao=`, vale `window.CASES`.
+case que está `false` em `window.CASES`. Sem `?opcao=`, vale a opção de
+`window.OPCAO_PADRAO` (hoje `'02'`, novembro); vazia, vale `window.CASES`.
 
 PDF de uma opção (ou do padrão, sem número):
 

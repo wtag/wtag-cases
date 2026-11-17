@@ -3,7 +3,7 @@
 PDF de uma opção da apresentação de cases.
 
     python3 gerar-pdf.py 01            # opção 01 de window.OPCOES
-    python3 gerar-pdf.py               # sem opção: o que window.CASES deixa no ar
+    python3 gerar-pdf.py               # sem número: a opção padrão (window.OPCAO_PADRAO)
     python3 gerar-pdf.py 01 --saida "/caminho/da/pasta"
 
 O index.html é a única fonte: o script lê a lista da opção (ou window.CASES),
@@ -101,6 +101,9 @@ def main():
     num = args[0] if args else None
     saida = sys.argv[sys.argv.index('--saida') + 1] if '--saida' in sys.argv else AQUI
     html = open(os.path.join(AQUI, 'index.html'), encoding='utf-8').read()
+    if not num:
+        pad = re.search(r"window\.OPCAO_PADRAO\s*=\s*'([^']*)'", html)
+        num = pad.group(1) if pad and pad.group(1) else None
     nome, capas, ids = ler_opcao(html, num) if num else ids_padrao(html)
 
     secoes = {}
