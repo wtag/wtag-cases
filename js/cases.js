@@ -33,6 +33,34 @@
 
   var CASES = window.CASES || {};
 
+  /* ?opcao=NN: a opção do arquivo manda em tudo — quais cases e em que ordem.
+     As seções são reordenadas ANTES do deck.js ler os slides, então sumário,
+     rodapé e numeração já nascem na ordem da opção. */
+  var mo = /[?&]opcao=([^&#]*)/.exec(location.search);
+  var opcao = mo && (window.OPCOES || {})[decodeURIComponent(mo[1])];
+  if (mo && !opcao) console.warn('[cases] opção "' + mo[1] + '" não existe em window.OPCOES; vale window.CASES.');
+  if (opcao) {
+    CASES = {};
+    [].forEach.call(document.querySelectorAll('.slide.case'), function (sec) { CASES[sec.id] = false; });
+    var fecho = document.querySelector('.slide[data-ato="fecho"]');
+    opcao.casos.forEach(function (id) {
+      var sec = document.getElementById(id);
+      if (!sec) { console.warn('[cases] opção cita "' + id + '", que não existe.'); return; }
+      CASES[id] = true;
+      if (fecho) fecho.parentNode.insertBefore(sec, fecho);
+    });
+    if ('capas' in opcao) window.CAPAS = opcao.capas;
+    /* a capa de cada cliente vai para logo antes do primeiro case dele */
+    var capaFeita = {};
+    opcao.casos.forEach(function (id) {
+      var sec = document.getElementById(id), ato = sec && sec.dataset.ato;
+      if (!ato || capaFeita[ato]) return;
+      capaFeita[ato] = true;
+      var capa = document.querySelector('.slide[data-capa][data-ato="' + ato + '"]');
+      if (capa) sec.parentNode.insertBefore(capa, sec);
+    });
+  }
+
   function lista(nome) {
     var m = new RegExp('[?&]' + nome + '=([^&#]*)').exec(location.search);
     if (!m) return null;

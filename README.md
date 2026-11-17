@@ -30,6 +30,30 @@ Corre), Bridgestone (Seu Pneu de Carro Novo), Multiplan (Golden Lake).
 
 A ordem na tela é a ordem das `<section>` no `index.html`.
 
+## Opções de apresentação
+
+Várias versões do deck no mesmo link, cada uma com seus cases e sua ordem.
+Ficam em `window.OPCOES`, logo abaixo de `window.CAPAS` no `index.html`:
+
+```js
+'02': { nome: 'Sicredi e Magalu', capas: true,
+        casos: ['s-sicredi', 's-magalu', 's-lojinha-fiuk'] }
+```
+
+O link é `…/wtag-cases/?opcao=02`. A opção manda em tudo: escolhe e ORDENA os
+cases (a capa de cada cliente vai junto, se `capas: true`) e pode trazer um
+case que está `false` em `window.CASES`. Sem `?opcao=`, vale `window.CASES`.
+
+PDF de uma opção (ou do padrão, sem número):
+
+```bash
+python3 gerar-pdf.py 02 --saida "<pasta da opção no Drive>"
+```
+
+No Drive, `WT.AG/2026/Criação/WTA_CasesAmanhaCredenciais` guarda uma pasta por
+opção (link + PDF), um modelo para as próximas e um backup do projeto. O backup
+é só cópia: o projeto vivo é este, e o link sai daqui.
+
 ## Capas de cliente
 
 `window.CAPAS = false`, logo abaixo da lista de cases, tira todas as capas de

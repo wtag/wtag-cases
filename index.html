@@ -58,6 +58,23 @@ window.CASES = {
    false = nenhuma capa aparece; os cases entram direto depois do divisor.
    true  = cada capa aparece enquanto houver um case daquele cliente no ar. */
 window.CAPAS = false;
+
+/* ── OPÇÕES DE APRESENTAÇÃO ─────────────────────────────────────────────────
+   Cada opção é uma versão da apresentação com link próprio:
+     …/wtag-cases/?opcao=01
+   Ela define QUAIS cases entram e EM QUE ORDEM (a ordem da lista manda), e
+   pode reabrir um case que está false em window.CASES: a opção é decidida
+   aqui no arquivo, não no endereço. Sem ?opcao= vale window.CASES.
+   Para criar uma nova, copie um bloco, troque o número e a lista.
+   Ids disponíveis: veja window.CASES acima. */
+window.OPCOES = {
+  '01': {
+    nome:  'Odontoprev, Barra e Keeta',
+    capas: false,
+    casos: ['s-odontoprev-pais', 's-odontoprev-aniversario',
+            's-barrashoppingsul', 's-keeta-crias-do-corre']
+  }
+};
 </script>
 </head>
 <body>
