@@ -1263,6 +1263,17 @@ a.reperc__it:hover .reperc__ph{border-color:var(--acento,var(--laranja-wt));
 .case.case--vert1.is-played .case__stack > [data-enter="expande"]:nth-child(n){
   clip-path:inset(0 0 0 0 round 28px)}
 
+/* ── DOIS filmes verticais lado a lado ──────────────────────────────────────
+   Calvin Klein · Cinemas BTS: as duas peças são 9:16 e não há foto de apoio.
+   Cada uma com 478 de largura ((980 − 24) / 2) e 850 de altura (9:16), centradas
+   na caixa de 870 que o .case--sem-reperc dá. */
+.case.case--vert2 .case__media{flex-direction:row;gap:24px;height:870px;align-items:center}
+.case.case--vert2 .case__video{width:478px;height:850px;flex:none}
+.case.case--vert2 .case__stack{flex:none;width:478px;height:850px}
+.case.case--vert2 .case__stack > .case__img{flex:1;border-radius:var(--r-case)}
+.case.case--vert2 .case__stack > [data-enter="expande"]:nth-child(1){clip-path:inset(6% 6% 6% 62% round 28px)}
+.case.case--vert2.is-played .case__stack > [data-enter="expande"]:nth-child(1){clip-path:inset(0 0 0 0 round 28px)}
+
 .reperc--fitarodape{--logo-h:68px;flex:1 1 0;min-width:0;align-self:stretch;
   flex-direction:row;align-items:center;gap:22px;border-left:0;padding:0}
 .reperc--fitarodape .reperc__rot{flex:none;max-width:96px;line-height:1.25;

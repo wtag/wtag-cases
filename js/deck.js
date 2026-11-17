@@ -29,6 +29,8 @@
   var ATOS = {
     abertura:    'Abertura',
     odontoprev:  'Odontoprev',
+    parkshopping: 'ParkShopping Canoas',
+    calvinklein: 'Calvin Klein',
     sicredi:     'Sicredi Serrana',
     magalu:      'Magalu',
     keeta:       'Keeta',
