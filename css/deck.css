@@ -2021,3 +2021,10 @@ a.reperc__it:hover .reperc__ph{border-color:var(--acento,var(--laranja-wt));
 #s-ck-cinemas .ck__col{gap:30px}
 #s-ck-cinemas .ck__col .case__blk p{-webkit-line-clamp:unset;display:block;overflow:visible;
   font-size:var(--ck-fs,18.5px);line-height:1.55}
+
+/* Clubinho da Poupança: os rótulos dos números são longos ("Impressões na
+   landing page"). Em vez de duas linhas largas e miúdas, quebram em três,
+   mais estreitas e um pouco maiores, usando a altura que sobra em cada número. */
+#s-bichinhos .case__kpis--vert .case__kpi{gap:10px}
+#s-bichinhos .case__kpis--vert .case__kpi span{max-width:100px;font-size:13.5px;line-height:1.28;
+  text-wrap:balance}
