@@ -150,7 +150,9 @@ Nunca colocar a pasta `.git` no Drive (o Drive corrompe o repositório).
   tela, corpo 18,5px, terminando na base dos filmes; fundo reenquadrado para o JK
   aparecer à esquerda; acento creme (marca P&B).
 - **ParkShopping**: destaque é a "Imagem principal" (foto); os 3 episódios tocam
-  nas miniaturas. "Imagem extra 1/2" e "Foto conteúdo 1/2" ficaram de fora.
+  nas miniaturas. As miniaturas são as capas `thumb_1..3` (9:16) recortadas na
+  faixa do título; a capa vertical inteira (`parkshopping-capaN.jpg`) é o pôster
+  do vídeo em tela cheia. "Imagem extra 1/2" e "Foto conteúdo 1/2" ficaram de fora.
 - Texto de comentário HTML sem `<!--` vaza para a tela: ao editar comentários,
   conferir que abrem e fecham.
 
