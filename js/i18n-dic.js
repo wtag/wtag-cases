@@ -729,6 +729,10 @@ window.DIC_EN = {
 'Se o público já estava indo aos cinemas para viver uma experiência com BTS, por que não transformar esse momento em uma oportunidade para aproximar a Calvin Klein ainda mais dos fãs e da cultura que conecta JK à marca?': 'If the audience was already going to cinemas for a BTS experience, why not turn that moment into an opportunity to bring Calvin Klein even closer to the fans and to the culture that links JK to the brand?',
 'Levamos a Calvin Klein para dentro do momento, com mídia em cinemas e shoppings durante o show: mais de 10 shoppings em SP, RJ, RS e PE, reforçando JK na narrativa da marca.': 'We took Calvin Klein into the moment, with media in cinemas and malls during the concert: more than 10 malls in SP, RJ, RS and PE, reinforcing JK in the brand narrative.',
 'Levar a Calvin Klein para dentro desse momento cultural, utilizando a mídia nos cinemas e shoppings para criar uma presença de marca relevante e estratégica durante a exibição do show. A ativação esteve presente em mais de 10 shoppings, com distribuição em SP, RJ, RS e Pernambuco, conectando a Calvin Klein ao universo do BTS e reforçando a presença de JK na narrativa da marca.': 'Taking Calvin Klein into this cultural moment, using media in cinemas and malls to build a relevant, strategic brand presence during the concert screening. The activation ran in more than 10 malls across SP, RJ, RS and Pernambuco, connecting Calvin Klein to the BTS universe and reinforcing JK in the brand narrative.',
+'Novas contas abertas': 'New accounts opened',
+'Em movimentação financeira': 'In financial transactions',
+'Pelúcias resgatadas': 'Plush toys redeemed',
+'Impressões na landing page': 'Landing page impressions',
 'Cinemas': 'Cinemas', 'Telas': 'Screens', 'Impactos': 'Impressions', 'Inserções': 'Insertions',
 
 /* ── versão de 07.10.2026: Odontoprev (2), Now New Barra (final) e Crias do Corre ── */

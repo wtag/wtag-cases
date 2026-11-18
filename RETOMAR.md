@@ -163,6 +163,8 @@ Nunca colocar a pasta `.git` no Drive (o Drive corrompe o repositório).
   oficial quando chegar.
 - **ParkShopping**: números de campanha recém-lançada (orgânico Meta, até 16/11).
   Atualizar perto do envio.
+- **Clubinho da Poupança**: ganhou coluna de números em 18.11.2026 (669 contas,
+  +R$3M movimentação, 748 pelúcias, +2M impressões na landing page).
 - **Odontoprev Dia dos Pais**: o doc diz "Fado do Dente" (mantido como está).
 - Commits locais podem estar aguardando **Push origin** no GitHub Desktop:
   conferir com `git status -sb` (mostra `ahead N`).
