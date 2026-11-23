@@ -62,10 +62,10 @@ Opções atuais:
 | Opção | Cases (nesta ordem) | Pasta no Drive |
 |---|---|---|
 | 01 | Odontoprev Dia dos Pais · Odontoprev 39 Anos · BarraShoppingSul Now New Barra! · Keeta Crias do Corre | `Opcao-01_Odontoprev-Barra-Keeta` |
-| 02 (novembro) · **no link principal** | ParkShopping Canoas Natal não dá pra adiar · Calvin Klein Cinemas BTS · Sicredi Clubinho da Poupança | `Opcao-02_Novembro_ParkShopping-CalvinKlein-Clubinho` |
+| 02 (novembro) · **no link principal** | ParkShopping Canoas Natal não dá pra adiar · Calvin Klein Cinemas BTS · Sicredi Clubinho da Poupança · Odontoprev Rir é o Melhor Tempero | `Opcao-02_Novembro_ParkShopping-CalvinKlein-Clubinho` |
 
 Ids de todos os cases que existem no arquivo: `s-odontoprev-pais`,
-`s-odontoprev-aniversario`, `s-barrashoppingsul`, `s-keeta-crias-do-corre`,
+`s-odontoprev-aniversario`, `s-odontoprev-tempero`, `s-barrashoppingsul`, `s-keeta-crias-do-corre`,
 `s-parkshopping`, `s-ck-cinemas`, `s-sicredi`, `s-bichinhos` (Clubinho),
 `s-private`, `s-horoscopo`, `s-magalu`, `s-lojinha-fiuk`, `s-central-corre`,
 `s-pulando-bloco`, `s-keeta-brasil-corre`, `s-bridgestone`, `s-golden-lake`.
@@ -119,7 +119,7 @@ Google Doc), `Logo` (versão branca), `Selo`/Lettering, `Foto_fundo`/`Fundo`,
 | `case--sem-reperc` | sem faixa de repercussão: mídia e números vão até 870 de altura |
 | `case--sem-kpis` | sem números |
 | `case--vert` | campanha só 9:16: reel grande + grade 2×2 |
-| `case--vert1` | 1 filme 9:16 na altura toda + 3 fotos empilhadas (Odontoprev) |
+| `case--vert1` | 1 filme 9:16 na altura toda + 3 fotos empilhadas (Odontoprev, os três) |
 | `case--vert2` | 2 filmes 9:16 lado a lado (Calvin Klein) |
 | `case--vert3` | 3 filmes 9:16 lado a lado |
 | `case__video--still` | destaque é foto, não vídeo (ParkShopping) |
@@ -165,6 +165,10 @@ Nunca colocar a pasta `.git` no Drive (o Drive corrompe o repositório).
   Atualizar perto do envio.
 - **Clubinho da Poupança**: ganhou coluna de números em 18.11.2026 (669 contas,
   +R$3M movimentação, 748 pelúcias, +2M impressões na landing page).
+- **Odontoprev Rir é o Melhor Tempero** (entrou em 23.11.2026, opção 02): sem
+  números, porque as publicações ainda não foram ao ar; no lugar, bloco
+  "Resultado" com o texto do doc. Quando os números chegarem, tirar
+  `case--sem-kpis` e pôr a coluna `case__kpis--vert` (ver Odontoprev 39 Anos).
 - **Odontoprev Dia dos Pais**: o doc diz "Fado do Dente" (mantido como está).
 - Commits locais podem estar aguardando **Push origin** no GitHub Desktop:
   conferir com `git status -sb` (mostra `ahead N`).

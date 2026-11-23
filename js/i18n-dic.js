@@ -785,6 +785,20 @@ window.DIC_EN = {
 'O pai troca o dente pela surpresa': 'The father swaps the tooth for a surprise',
 'O pai como Fado do Dente': 'The father as the Tooth Fairy',
 'Personagens dos depoimentos': 'Testimonial characters',
-'Retratos em traço contínuo': 'Continuous-line portraits'
+'Retratos em traço contínuo': 'Continuous-line portraits',
+'Rir é o melhor tempero': 'Laughter is the best seasoning',
+'3ª temporada': 'Season 3',
+'A terceira temporada do “Rir é o Melhor Tempero” chegou com uma nova rodada de desafios na cozinha! A gravação reuniu 10 duplas e o chef convidado Gabriel Coelho, vencedor do “Mestre do Sabor”, em uma experiência cheia de brasilidade.': 'The third season of “Rir é o Melhor Tempero” (Laughter Is the Best Seasoning) brought a new round of kitchen challenges! The shoot gathered 10 pairs and guest chef Gabriel Coelho, winner of “Mestre do Sabor”, in an experience full of Brazilian flavor.',
+'A 3ª temporada do “Rir é o Melhor Tempero” reuniu 10 duplas e o chef convidado Gabriel Coelho, vencedor do “Mestre do Sabor”, numa experiência cheia de brasilidade.': 'Season 3 of “Rir é o Melhor Tempero” gathered 10 pairs and guest chef Gabriel Coelho, winner of “Mestre do Sabor”, in an experience full of Brazilian flavor.',
+'Cozinhar também é uma forma de se conectar. E quando a receita envolve trabalho em equipe, diversão e brasilidade, o resultado fica ainda melhor!': 'Cooking is also a way to connect. And when the recipe calls for teamwork, fun and Brazilian flair, the result is even better!',
+'Transformar a cozinha em palco de um desafio: em apenas 1h30, cada dupla precisou preparar entrada, prato principal e sobremesa. No final, os pratos foram avaliados e as melhores receitas premiadas.': 'Turn the kitchen into the stage for a challenge: in just 1h30, each pair had to prepare a starter, a main course and a dessert. At the end, the dishes were judged and the best recipes awarded.',
+'A cozinha virou palco de um desafio: em 1h30, cada dupla preparou entrada, prato principal e sobremesa. No fim, as melhores receitas foram premiadas.': 'The kitchen became the stage for a challenge: in 1h30, each pair cooked a starter, a main course and a dessert. In the end, the best recipes were awarded.',
+'As publicações sobre o evento ainda não foram ao ar, mas a experiência presencial já foi um sucesso! O público adorou a dinâmica e entrou de cabeça no clima da competição.': 'The posts about the event have not gone live yet, but the in-person experience was already a hit! The audience loved the format and dove right into the competitive spirit.',
+'As publicações ainda não foram ao ar, mas a experiência presencial já foi um sucesso: o público entrou de cabeça no clima da competição.': 'The posts have not gone live yet, but the in-person experience was already a hit: the audience dove right into the competitive spirit.',
+'Duplas cozinhando no desafio': 'Pairs cooking in the challenge',
+'Bancada com os ingredientes do desafio': 'Counter with the challenge ingredients',
+'Troféus e kits dos vencedores': "Winners' trophies and kits",
+'Duplas cozinhando lado a lado': 'Pairs cooking side by side',
+'Resultado': 'Result'
 
 };
