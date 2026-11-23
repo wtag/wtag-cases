@@ -62,7 +62,7 @@ Opções atuais:
 | Opção | Cases (nesta ordem) | Pasta no Drive |
 |---|---|---|
 | 01 | Odontoprev Dia dos Pais · Odontoprev 39 Anos · BarraShoppingSul Now New Barra! · Keeta Crias do Corre | `Opcao-01_Odontoprev-Barra-Keeta` |
-| 02 (novembro) · **no link principal** | ParkShopping Canoas Natal não dá pra adiar · Calvin Klein Cinemas BTS · Sicredi Clubinho da Poupança · Odontoprev Rir é o Melhor Tempero | `Opcao-02_Novembro_ParkShopping-CalvinKlein-Clubinho` |
+| 02 (novembro) · **no link principal** | ParkShopping Canoas Natal não dá pra adiar · Sicredi Clubinho da Poupança · Odontoprev Rir é o Melhor Tempero (Calvin Klein oculto desde 23.11) | `Opcao-02_Novembro_ParkShopping-CalvinKlein-Clubinho` |
 
 Ids de todos os cases que existem no arquivo: `s-odontoprev-pais`,
 `s-odontoprev-aniversario`, `s-odontoprev-tempero`, `s-barrashoppingsul`, `s-keeta-crias-do-corre`,
