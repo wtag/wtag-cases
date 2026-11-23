@@ -2028,3 +2028,14 @@ a.reperc__it:hover .reperc__ph{border-color:var(--acento,var(--laranja-wt));
 #s-bichinhos .case__kpis--vert .case__kpi{gap:10px}
 #s-bichinhos .case__kpis--vert .case__kpi span{max-width:100px;font-size:13.5px;line-height:1.28;
   text-wrap:balance}
+
+/* ── Odontoprev · Rir é o Melhor Tempero ───────────────────────────────────
+   Sem números (.case--sem-kpis), a mídia encosta na direita (868→1848) e
+   sobravam 268px entre o texto e o filme. A coluna de texto cresce até 812,
+   o mesmo respiro de 56 dos outros cases (600→656). São quatro blocos
+   (Resultado incluso), um a mais que o padrão: a coluna sobe para 478 (o selo
+   termina em 450) e o vão entre blocos cai de 22 para 16, fechando em ~858,
+   antes do "+ Texto completo" (870). */
+#s-odontoprev-tempero .case__col{width:740px;top:478px;gap:16px}
+/* corpo 13,5→15px para a linha ocupar a largura nova (o balance encurtava) */
+#s-odontoprev-tempero .case__blk p{font-size:15px}
